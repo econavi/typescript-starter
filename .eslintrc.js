@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     es2020: true,
   },
-  extends: ['airbnb-base'],
+  extends: ['airbnb-base', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
@@ -18,6 +18,7 @@ module.exports = {
         'airbnb-typescript/base',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:prettier/recommended',
       ],
       files: ['*.ts'],
       rules: {},
@@ -27,4 +28,4 @@ module.exports = {
       files: ['./**/*.js'],
     },
   ],
-};
+}
